@@ -15,7 +15,7 @@ export const useContent = () => {
 const DEFAULT_GALLERY = [
   {
     id: 'g1',
-    url: 'https://picsum.photos/800/800?random=10',
+    url: 'https://images.unsplash.com/photo-1504384338696-612e3d0c9d55?w=800&h=800&fit=crop',
     publicId: 'demo/1',
     type: 'image',
     category: 'General',
@@ -23,7 +23,7 @@ const DEFAULT_GALLERY = [
   },
   {
     id: 'g2',
-    url: 'https://picsum.photos/800/800?random=11',
+    url: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=800&fit=crop',
     publicId: 'demo/2',
     type: 'image',
     category: 'Education',
@@ -31,7 +31,7 @@ const DEFAULT_GALLERY = [
   },
   {
     id: 'g3',
-    url: 'https://picsum.photos/800/800?random=12',
+    url: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=800&fit=crop',
     publicId: 'demo/3',
     type: 'image',
     category: 'Community',

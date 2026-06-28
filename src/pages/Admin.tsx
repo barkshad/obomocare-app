@@ -703,7 +703,7 @@ export const Admin: React.FC = () => {
                 {!editingProgram ? (
                   <div className="grid gap-4">
                     <button 
-                      onClick={() => setEditingProgram({ title: '', description: '', stats: '', image: 'https://picsum.photos/400/300', mediaType: 'image' })}
+                      onClick={() => setEditingProgram({ title: '', description: '', stats: '', image: 'https://images.unsplash.com/photo-1567521465095-616a29c0db7f?w=400&h=300&fit=crop', mediaType: 'image' })}
                       className="w-full py-6 border-2 border-dashed border-slate-300 rounded-2xl text-slate-500 font-bold hover:border-[#1A0FAB] hover:text-[#1A0FAB] hover:bg-[#E8E6FA] transition-all flex items-center justify-center gap-2 active:bg-slate-100"
                     >
                       <Plus size={24} /> Add New Program
@@ -752,7 +752,7 @@ export const Admin: React.FC = () => {
                <div className="space-y-6">
                  {!editingChild ? (
                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                      <button onClick={() => setEditingChild({ name: '', age: 5, dream: '', bio: '', image: 'https://picsum.photos/400/500', needsSponsorship: true })} className="min-h-[150px] border-2 border-dashed border-slate-300 rounded-2xl text-slate-500 font-bold hover:border-[#1A0FAB] flex flex-col items-center justify-center gap-2 p-8"><Plus size={32} /><span>Add Profile</span></button>
+                      <button onClick={() => setEditingChild({ name: '', age: 5, dream: '', bio: '', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=500&fit=crop', needsSponsorship: true })} className="min-h-[150px] border-2 border-dashed border-slate-300 rounded-2xl text-slate-500 font-bold hover:border-[#1A0FAB] flex flex-col items-center justify-center gap-2 p-8"><Plus size={32} /><span>Add Profile</span></button>
                       {content.children.map(child => (
                         <div key={child.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex md:block">
                            <img src={child.image} className="w-32 md:w-full h-32 md:h-56 object-cover" />
@@ -790,7 +790,7 @@ export const Admin: React.FC = () => {
                <div className="space-y-6">
                  {!editingStory ? (
                     <div className="space-y-4">
-                       <button onClick={() => setEditingStory({ title: '', category: 'Success Story', excerpt: '', content: '', image: 'https://picsum.photos/800/400', mediaType: 'image' })} className="w-full py-4 text-white rounded-xl font-bold hover:bg-[#150C8A] flex justify-center items-center gap-2" style={{ backgroundColor: BRAND.blue }}><Plus size={24} /> Write New Story</button>
+                       <button onClick={() => setEditingStory({ title: '', category: 'Success Story', excerpt: '', content: '', image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=400&fit=crop', mediaType: 'image' })} className="w-full py-4 text-white rounded-xl font-bold hover:bg-[#150C8A] flex justify-center items-center gap-2" style={{ backgroundColor: BRAND.blue }}><Plus size={24} /> Write New Story</button>
                        {content.stories.map(story => (
                           <div key={story.id} className="bg-white p-4 rounded-2xl border border-slate-100 flex gap-4 items-center">
                              <img src={story.image} className="w-24 h-24 rounded-lg object-cover" />
