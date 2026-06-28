@@ -1,0 +1,46 @@
+@import './tokens.css';
+@import './reset.css';
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    color: #0B1F3A;
+    background: var(--surface-light, #f8f9fa);
+    font-family: var(--font-body, 'Plus Jakarta Sans', system-ui, sans-serif);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, 'Plus Jakarta Sans', system-ui, sans-serif);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-brand, #0B1F3A);
+  }
+
+  ::selection {
+    background: rgba(249, 115, 22, 0.25);
+    color: var(--color-brand, #0B1F3A);
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  button { font: inherit; cursor: pointer; border: none; background: none; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap;
+  }
+
+  .skip-link {
+    position: absolute; top: -100%; left: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-brand, #0B1F3A);
+    color: var(--surface-white, #fff);
+    z-index: 9999; border-radius: var(--radius-sm, 4px);
+    font-weight: 600; font-size: 0.875rem;
+  }
+  .skip-link:focus { top: 1rem; }
+}

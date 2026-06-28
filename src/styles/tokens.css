@@ -1,0 +1,94 @@
+:root {
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --color-navy: #0B1F3A;
+  --color-navy-dark: #000615;
+  --color-navy-slate: #273140;
+  --color-navy-light: #d9e3f7;
+
+  --color-orange: #F97316;
+  --color-orange-hover: #ea6b0a;
+  --color-orange-soft: #fff1e6;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --surface-primary: #f9f9ff;
+  --surface-container: #e6eeff;
+  --surface-container-low: #eff3ff;
+  --surface-container-high: #dee9fd;
+  --surface-container-lowest: #ffffff;
+  --surface-soft: #f8f9fa;
+
+  --text-on-surface: #121c2a;
+  --text-secondary: #44474d;
+  --text-muted: #6b7280;
+
+  --border: #e5e7eb;
+  --border-blue: #dee9fd;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 10px 30px rgba(0,0,0,0.1);
+  --shadow-lg: 0 25px 50px rgba(0,0,0,0.15);
+
+  --container-max: 1280px;
+  --section-pad: 80px;
+  --header-h: 72px;
+  --gutter: 24px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Legacy aliases */
+  --color-brand: var(--color-navy);
+  --color-brand-dark: var(--color-navy-dark);
+  --color-brand-mid: #1a345e;
+  --color-brand-light: var(--color-navy-slate);
+  --color-secondary: var(--color-orange);
+  --color-secondary-mid: var(--color-orange-hover);
+  --color-secondary-light: var(--color-orange-soft);
+  --color-accent: var(--color-orange);
+  --color-accent-mid: var(--color-orange-hover);
+  --color-accent-light: var(--color-orange-soft);
+  --surface-elevated: var(--surface-container-high);
+  --surface-light: var(--surface-soft);
+  --surface-white: var(--color-white);
+
+  --text-xs: clamp(0.64rem, 0.6vw, 0.75rem);
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-hero: clamp(2rem, 5vw, 3.5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+
+  --container: min(90rem, calc(100% - 3rem));
+  --section-gap: clamp(4rem, 10vw, 8rem);
+}
